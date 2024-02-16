@@ -62,11 +62,11 @@ li {
 nav {
     margin-bottom: 40px;
 }
-
 nav>img {
     height: auto;
     margin-top: 0.5vw;
     width: 17vw;
+    margin:10px;
     object-fit: cover;
 }
 
@@ -75,6 +75,7 @@ ul {
     display: flex;
     flex-wrap: nowrap;
     gap: 1vw;
+    margin:10px;
     padding-right: 1vw;
 }
 
@@ -87,6 +88,12 @@ li {
     padding: 0.3em;
     margin-top: 0.5vw;
     transition: 0.6s;
+}
+
+@media screen and (max-width:600px) {
+    li {
+        font-size: 2.3vw;
+    }
 }
 
 li:hover {
@@ -186,12 +193,12 @@ footer {
     width: 100%;
 }
 
-@media screen and (min-width:1500px) 
-{
+@media screen and (min-width:1500px) {
     footer {
         margin-top: auto;
     }
 }
+
 .Query {
     color: #97C4EE;
     padding: 10px;
@@ -201,19 +208,21 @@ footer {
     padding: 10px;
     font-size: 1.6rem;
 }
+
 a.footerlinks {
     text-decoration: none;
     display: block;
-    width:fit-content;
+    width: fit-content;
     color: #97C4EE;
     padding-top: 10px;
     padding: 10px;
-    padding-bottom: 5px; 
+    padding-bottom: 5px;
     transition: 0.5s;
 }
+
 a.footerlinks:hover {
     color: white;
-   
+
     transform: scale(0.99);
 }
 
@@ -238,25 +247,30 @@ a.footerlinks:hover {
     align-items: center;
     justify-content: center;
 }
-a{
+
+a {
     text-decoration: none;
 }
+
 .socials a {
     margin: 0 10px;
     text-decoration: none;
     font-size: 1.5rem;
 }
+
 .socials hr {
-    flex: 1; 
+    flex: 1;
     border: none;
     border-top: 2px solid #97C4EE;
 }
-.fa {   background-color: #97C4EE;
-  color: #182145;
-  width:30px;
-  text-align: center;
+
+.fa {
+    background-color: #97C4EE;
+    color: #182145;
+    width: 30px;
+    text-align: center;
     border-radius: 12px;
-    padding:10px;
+    padding: 10px;
     transition: 0.5s;
 }
 
@@ -264,13 +278,15 @@ a{
     color: white;
     transform: scale(1.1);
 }
-@media screen and (max-width:700px){
-    .socials a{
+
+@media screen and (max-width:700px) {
+    .socials a {
         font-size: 0.8rem;
-        width:20px;
-        padding:5px;
+        width: 20px;
+        padding: 5px;
     }
 }
+
 .footerlogo {
     text-align: center;
     padding: 10px;
@@ -283,33 +299,37 @@ a{
     height: auto;
     object-fit: cover;
 }
-.footerlogo div{
-    display:flex;
+
+.footerlogo div {
+    display: flex;
     flex-wrap: nowrap;
     justify-content: center;
     align-items: center;
 }
+
 @media screen and (max-width:400px) {
 
     .footerlogo {
-      
+
         font-size: 0.8rem;
     }
 }
 
 @media screen and (min-width:1500px) {
-    .footerlogo  {
-        
+    .footerlogo {
+
         font-size: 3rem;
     }
 
 }
+
 .footerlogo a {
     color: #97C4EE;
     padding: 10px;
     transition: 0.5s;
 
 }
+
 .footerlogo a:hover {
     color: white;
 }
