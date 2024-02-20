@@ -95,7 +95,6 @@ li:hover {
     justify-content: center;
     align-items: center;
 }
-
 .box>p {
     display: inline-block;
     text-align: justify;
@@ -113,7 +112,6 @@ li:hover {
     padding: 2rem;
     padding-top: 2rem;
     padding-bottom: 4rem;
-
     box-shadow: 0px 0px 10px 5px rgba(24, 33, 69, 0.3);
 }
 

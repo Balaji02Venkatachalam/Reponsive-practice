@@ -1,50 +1,88 @@
-*{
-    margin:0;
-    padding:0;
+html {
+    font-size: 10px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
     font-family: 'Poppins', sans-serif;
-    }
-    input:focus{
-        outline:none;
-        background-color:white;
-    }
-    input::placeholder{
-        color:#97C4EE;
-    }
-    section{
-        background: linear-gradient(to top,rgba(0,0,0,0.8),rgba(245, 245, 245, 0.329)),url("../assests/globe\ with\ aeroplane.png");
-        background-position:center;
+}
+section {
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(245, 245, 245, 0.329)), url("../assests/globe\ with\ aeroplane.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    
+}
+@media screen and (min-width:700px) {
+    section {
+      
+        height: 100vh;
+        background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
     }
-    ul,li{
-        display:inline-block;
+}
+@media screen and (max-width:600px) {
+    section {
+        
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
     }
-    nav{
-    padding:15px;
-    margin-bottom: 40px;
-    padding-top:20px;
+}
+@media screen and (max-width:450px) {
+    section {
+      
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
     }
-    ul{
-        float: right;
+}
+ul,
+li {
+    display: inline-block;
+}
+
+nav>img {
+    height: auto;
+    margin-top: 0.5vw;
+    width: 17vw;
+    margin:10px;
+    object-fit: cover;
+}
+
+ul {
+    float: right;
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 1vw;
+    margin:10px;
+    padding-right: 1vw;
+}
+
+li {
+    cursor: pointer;
+    color: #182145;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 12px;
+    font-size: 1.7vw;
+    padding: 0.3em;
+    margin-top: 0.5vw;
+    transition: 0.6s;
+}
+
+@media screen and (max-width:700px) {
+    li {
+        font-size: 2.5vw;
     }
-    li
-    {
-        cursor: pointer;
-        color:#182145;
-        background-color:rgba(255,255,255,0.3);
-        border-radius: 12px;
-        margin-right: 40px;
-        font-size: 20px;
-        padding:10px;
-        margin-top:10px;
-        transition: 0.6s;
-    }
-    li:hover{
-        color:white;
-        background-color:#182145;
-        border-radius:12px;
-        transform: scale(0.99);
-    }
+}
+li:hover {
+    color: white;
+    background-color: #182145;
+    transform: scale(0.99);
+}
     h2{
         color:white;
         font-size:65px;
@@ -73,17 +111,17 @@
         top:-17px;
     }
     .box{
-        display:inline-block;
-        height:520px;
+        display:block;
+        height: fit-content;
         width:300px;
+        margin:auto;
         background-color:rgba(255,255,255,0.3);
         border-radius:15px;
-        position: relative;
-        left:38%;
-        padding: 30px;
+        padding-right:20px;
+        padding-left:20px;
         padding-top:20px;
-        margin-top:5px;
-        margin-bottom:70px;
+        margin-top: 5vh;
+       margin-bottom:auto;
         box-shadow: 0px 0px 10px 5px rgba(24,33,69,0.3);
        
     }
@@ -111,10 +149,9 @@
         color:rgba(0,0,0,0.7);
         font-size: 20px;
         position:relative;
-       top:30px;
-       margin-bottom:10px;
+       top:15px;
+      
        font-weight: bold;
-
     }
     h1{
     color:#97C4EE;
@@ -124,11 +161,11 @@
         border-width:0px;
         border-color:#182145;
         width:200px;
+        margin:auto;
         padding:3px;
         text-align:center;
         margin-top:5px;
         border-radius:12px;
-        margin-left:45px;
     }
 
     input{
@@ -139,7 +176,7 @@ color:#97C4EE;
         border-style:solid;
         border-radius:12px;
         height:30px;
-        margin-top:30px;
+        margin:10px;
         margin-left:20px;
         text-align:center;
         border-color:#182145;
@@ -161,73 +198,158 @@ color:#97C4EE;
     a:active{
         opacity:0.7;
     }
-    footer{
-       background-color:#182145;
+    @media screen and (max-width:750px){
+        .box{
+            margin-top:15vh;
+        }
     }
-    .Query{
-        color:#97C4EE;
-        display:block;
-       padding-bottom:10px;
-        margin-left:10px;
-        padding-top:25px;
-        padding-left:20px;
+    footer {
+        background-color: #182145;
+        width: 100%;
+        height: fit-content;
     }
-    a.footerlinks{
-        text-decoration:none;
-        color:#97C4EE;
-        padding-top:10px;
-        padding-left:20px;
-        margin-left:10px;
-        padding-right:20px;
-        padding-bottom: 10px;
+    
+    @media screen and (min-width:1500px) {
+        footer {
+            margin-top: auto;
+        }
+    }
+    
+    .Query {
+        color: #97C4EE;
+        padding: 10px;
+    }
+    
+    .enquiry {
+        padding: 10px;
+        font-size: 1.6rem;
+    }
+    
+    a.footerlinks {
+        text-decoration: none;
+        display: block;
+        width: fit-content;
+        color: #97C4EE;
+        padding-top: 10px;
+        padding: 10px;
+        padding-bottom: 5px;
         transition: 0.5s;
     }
-    a.footerlinks:hover{
-        color:white;
-        background-color:#97C4EE;
-        border-radius:12px;
+    
+    a.footerlinks:hover {
+        color: white;
+    
         transform: scale(0.99);
     }
-    hr{
-        width:39.9%;
-        display:inline-block;
-        background-color:#97C4EE;
-        border: none;
-        height: 2px;
-       
+    
+    @media screen and (max-width:400px) {
+    
+        .enquiry {
+            padding: 5px;
+            font-size: 0.8rem;
+        }
     }
+    
+    @media screen and (min-width:1500px) {
+        .enquiry {
+            padding: 20px;
+            font-size: 3rem;
+        }
+    
+    }
+    
+    .socials {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    a {
+        text-decoration: none;
+    }
+    
+    .socials a {
+        margin: 0 10px;
+        text-decoration: none;
+        font-size: 2rem;
+    }
+    
+    .socials hr {
+        flex: 1;
+        border: none;
+        border-top: 2px solid #97C4EE;
+    }
+    
     .fa {
-        padding: 10px;
-        font-size: 30px;
+        background-color: #97C4EE;
+        color: #182145;
         width: 30px;
         text-align: center;
-        margin: 5px;
-        color:#182145;
-        border: solid 1px #97C4EE;
-        background-color:#97C4EE;
-        border-radius: 5px;
+        border-radius: 12px;
+        padding: 10px;
         transition: 0.5s;
-      }
-    .fa:hover{
-        color:white;
+    }
+    
+    .fa:hover {
+        color: white;
         transform: scale(1.1);
     }
-    .footerlogo{
-        text-align:center;
-        padding:10px;
-        color:#97C4EE;
-        font-size:20px;
+    
+    @media screen and (max-width:700px) {
+        .socials a {
+            font-size: 0.8rem;
+            width: 20px;
+            padding: 5px;
+        }
+    }
+    
+    .footerlogo {
+        text-align: center;
+        padding: 10px;
+        color: #97C4EE;
+        font-size: 1.6rem;
+    }
+    
+    .footerlogo>img {
+        width: 17vw;
+        height: auto;
+        object-fit: cover;
+    }
+    
+    .footerlogo div{
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    @media screen and (max-width:400px){
+    
+        .footerlogo {
+    
+            font-size: 0.8rem;
+        }
+    }
+    
+    @media screen and (min-width:1500px){
+        .footerlogo {
+    
+            font-size: 3rem;
+        }
     
     }
-    .footerlogo a{
-        color:#97C4EE;
-        padding:10px;
+    
+    .footerlogo a {
+        color: #97C4EE;
+        padding: 10px;
         transition: 0.5s;
     
     }
-    .footerlogo a:hover{
-        color:white;
+    
+    .footerlogo a:hover {
+        color: white;
     }
-    a:hover{
-        color:white;
+    
+    a:hover {
+        color: white;
     }
